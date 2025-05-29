@@ -1,11 +1,30 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 nav {
   background-color: #43281c;
+  height: 75px;
 }
 
-h1 {
+a {
+  text-decoration: none;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.name-brand {
+  font-family: 'Open Sans', sans-serif;
   color: #fbf2c0;
 }
