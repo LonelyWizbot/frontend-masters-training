@@ -81,6 +81,13 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   grid-template-rows: auto auto;
+  border-bottom: 2px solid #ddb892;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.wrapper:last-child {
+  border-bottom: none;
 }
 
 .item-name, .item-price {
@@ -88,6 +95,16 @@ h2 {
 }
 
 .item-ingredient {
+  font-size: 14px;
+  color: #B08968;
   grid-column: 2;
   grid-row: 2;
+}
+
+.wrapper.two-ingredients {
+  grid-template-rows: auto auto auto;
+}
+
+.item-ingredient.second {
+  grid-row: 3;
 }
