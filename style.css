@@ -108,3 +108,16 @@ h2 {
 .item-ingredient.second {
   grid-row: 3;
 }
+
+.input-label {
+  color: #885a2d;
+  font-size: 11px;
+}
+
+.name-input {
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #885a2d;
+  border-radius: 100px;
+  padding: 8px;
+  width: 100%;
+}
