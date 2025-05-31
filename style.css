@@ -43,6 +43,7 @@ h2 {
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .page {
@@ -74,4 +75,19 @@ h2 {
 
 .name, .payment {
   flex: 1;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.item-name, .item-price {
+  font-weight: bold;
+}
+
+.item-ingredient {
+  grid-column: 2;
+  grid-row: 2;
 }
