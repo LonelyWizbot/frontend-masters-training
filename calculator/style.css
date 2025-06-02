@@ -11,5 +11,93 @@ body {
   width: 200px;
   height: 450px;
   display: grid;
+  grid-template-areas:
+  "div div div div"
+  "c c arrow divide"
+  "seven eight nine multiply"
+  "four five six minus"
+  "one two three plus"
+  "zero zero zero equals"
+  ;
 }
 
+div {
+  background-color: black;
+  color: white;
+  text-align: right;
+  grid-area: div;
+}
+
+.operators {
+  background-color: #df974c;
+  color: white;
+  text-align: center;
+}
+
+.c {
+  grid-area: c;
+}
+
+.arrow {
+  grid-area: arrow;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equals {
+  grid-area: equals;
+}
