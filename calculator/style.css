@@ -12,7 +12,7 @@ body {
   height: 600px;
   display: grid;
   grid-template-areas:
-  "div div div div"
+  "result result result result"
   "c c arrow divide"
   "seven eight nine multiply"
   "four five six minus"
@@ -21,13 +21,16 @@ body {
   ;
 }
 
-div {
+.result {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   color: white;
   font-size: 40px;
-  text-align: right;
-  grid-area: div;
+  grid-area: result;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
 }
 
 button {
