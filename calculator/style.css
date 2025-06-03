@@ -14,10 +14,10 @@ body {
   grid-template-areas:
   "result result result result"
   "c c arrow divide"
-  "seven eight nine multiply"
+  "seven eight nine mult"
   "four five six minus"
   "one two three plus"
-  "zero zero zero equals"
+  "z z z equals"
   ;
 }
 
@@ -68,8 +68,8 @@ button {
   grid-area: nine;
 }
 
-.multiply {
-  grid-area: multiply;
+.mult {
+  grid-area: mult;
 }
 
 .four {
@@ -104,8 +104,8 @@ button {
   grid-area: plus;
 }
 
-.zero {
-  grid-area: zero;
+.z {
+  grid-area: z;
 }
 
 .equals {
