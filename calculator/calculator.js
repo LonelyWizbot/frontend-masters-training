@@ -18,5 +18,8 @@ function clear() {
 }
 
 function arrow() {
-  result.textContent = result.textContent.pop();
+  result.textContent = result.textContent.slice(0, -1);
+  if (result.textContent === "") {
+    result.textContent = 0;
+  }
 }
