@@ -12,6 +12,35 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 75px 0;
+  margin: 70px 0;
   padding: 20px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+.boxes {
+  display: grid;
+  gap: 12px;
+  grid-template-areas:
+  "input input input input input"
+  "input input input input input"
+  "input input input input input"
+  "input input input input input"
+  "input input input input input"
+  "input input input input input"
+  ;
+}
+
+.input-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 3px solid darkgray;
+}
+
+.input-box:hover {
+  border: 3px solid black;
 }
