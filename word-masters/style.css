@@ -13,16 +13,22 @@ header {
   justify-content: center;
   align-items: center;
   margin: 70px auto 60px auto;
-  width: 20%;
+  width: 90%;
+  max-width: 400px;
   padding-bottom: 30px;
   border-bottom: 2px solid #333;
+}
+
+header h1 {
+  white-space: nowrap;
 }
 
 .grid {
   display: flex;
   justify-content: center;
   margin: 0px auto;
-  width: 20%;
+  width: 90%;
+  max-width: 400px;
 }
 
 .boxes {
@@ -39,16 +45,65 @@ header {
 }
 
 .input-box {
-  width: 60px;
-  height: 60px;
   border-radius: 8px;
-  border: 3px solid darkgray;
+  border: 3px solid #cccccc;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
+  height: 65px;
+  width: 65px;
 }
 
 .input-box:hover {
-  border: 3px solid #333;
+  border: 3px solid darkgrey;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 95%;
+    max-width: 300px;
+    margin: 30px auto 40px auto;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    width: 95%;
+    max-width: 300px;
+  }
+
+  .boxes {
+    gap: 6px;
+  }
+
+  .input-box {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    width: 90%;
+    max-width: 350px;
+    margin: 50px auto 50px auto;
+  }
+
+  .grid {
+    max-width: 350px;
+  }
+
+  .boxes {
+    gap: 10px;
+  }
+
+  .input-box {
+    font-size: 28px;
+    height: 60px;
+    width: 60px;
+  }
 }
