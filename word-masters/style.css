@@ -12,13 +12,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px 0;
-  padding: 20px;
+  margin: 70px auto 60px auto;
+  width: 20%;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #333;
 }
 
 .grid {
   display: flex;
   justify-content: center;
+  margin: 0px auto;
+  width: 20%;
 }
 
 .boxes {
@@ -46,5 +50,5 @@ header {
 }
 
 .input-box:hover {
-  border: 3px solid black;
+  border: 3px solid #333;
 }
