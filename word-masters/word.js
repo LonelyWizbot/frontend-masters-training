@@ -31,7 +31,13 @@ testerInputs.forEach(input => {
     };
   });
 
-  input.addEventListener("input", () => {
-    input.nextElementSibling.focus();
+  input.addEventListener("input", (event) => {
+    if (input.nextElementSibling === null) {
+      console.log("Click enter to validate word")
+    } else if (input.className === input.nextElementSibling.className) {
+      input.nextElementSibling.focus();
+    } else {
+      console.log("Click enter to validate word")
+    }
   });
 });
