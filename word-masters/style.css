@@ -47,6 +47,7 @@ header h1 {
 .tester-input {
   border-radius: 8px;
   border: 3px solid #cccccc;
+  caret-color: transparent;
   text-align: center;
   font-size: 32px;
   font-weight: bold;

@@ -1,5 +1,8 @@
 let testerInputs = document.querySelectorAll(".tester-input");
+
+/*
 let answer = "";
+*/
 
 function isLetter(letter) {
   return /^[a-zA-Z]$/.test(letter);
@@ -31,7 +34,7 @@ testerInputs.forEach(input => {
     };
   });
 
-  input.addEventListener("input", (event) => {
+  input.addEventListener("input", () => {
     if (input.nextElementSibling === null) {
       console.log("Click enter to validate word")
     } else if (input.className === input.nextElementSibling.className) {
