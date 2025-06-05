@@ -1,13 +1,37 @@
-let answer = document.querySelector(".tester-input");
+let testerInputs = document.querySelectorAll(".tester-input");
+let answer = "";
 
 function isLetter(letter) {
   return /^[a-zA-Z]$/.test(letter);
-}
+};
 
-answer.addEventListener("keydown", function (event) {
-  if (!isLetter(event.key)) {
-    event.preventDefault();
+/*
+function answerWord() {
+  answer += testerInput.innerText;
+};
+*/
+
+/*
+function validateAnswer(answer) {
+  if (testerInput.length === 5) {
+  validaaaaaate;
+  let answer = "";
   } else {
-    console.log("this is a letter")
-  };
+    event.preventDefault();
+  }
+};
+*/
+
+testerInputs.forEach(input => {
+  input.addEventListener("keydown", (event) => {
+    if (!isLetter(event.key)) {
+      event.preventDefault();
+    } else {
+      console.log("This is a letter")
+    };
+  });
+
+  input.addEventListener("input", () => {
+    input.nextElementSibling.focus();
+  });
 });
